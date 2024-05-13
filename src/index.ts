@@ -1,5 +1,5 @@
 import { Temporal } from "npm:temporal-polyfill@0.2.4"
-import { type DayAndDayOfWeek, dayOfWeek } from "./type.ts"
+import { type DayAndDayOfWeek, dayOfWeek, Month } from "./type.ts"
 import { assertWithinDayOfWeekIndex, range } from "./util.ts"
 
 export function dayAndDayOfWeekList({
@@ -7,7 +7,7 @@ export function dayAndDayOfWeekList({
   month,
 }: {
   year: number
-  month: number
+  month: Month
 }): DayAndDayOfWeek[] {
   const cal = new Temporal.Calendar("iso8601")
   const yearMonth = Temporal.PlainYearMonth.from({ year, month })
