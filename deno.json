@@ -1,0 +1,16 @@
+{
+    "name":"@hidari/calendar-logic",
+    "version":"0.1.0",
+    "exports":"./mod.ts",
+    "compilerOptions": {
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false
+    }
+}
